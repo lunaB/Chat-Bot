@@ -1,0 +1,29 @@
+.level .title {
+  font-size: 24px;
+}
+
+.chat {
+  margin: 10px 0px;
+  font-size: 14px;
+}
+.chat > p {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #333333;
+}
+.chat.left {
+  text-align: left;
+}
+.chat.left > p {
+  background-color: #EFEBE9;
+  text-align: left;
+  border-radius: 15px 15px 15px 0px;
+}
+.chat.right {
+  text-align: right;
+}
+.chat.right > p {
+  background-color: #FFCC80;
+  text-align: right;
+  border-radius: 15px 15px 0px 15px;
+}
