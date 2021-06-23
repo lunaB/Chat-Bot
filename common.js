@@ -14,31 +14,29 @@ $(document).ready(async function() {
   </div>
   `
   function Q(text) {
-    let t = document.createTextNode(text)
-    
-    let q = document.createElement('p')
-    q.appendChild(t)
-
-    let c = document.createElement('div')
-    c.classList.add('chat')
-    c.classList.add('left')
-    c.appendChild(q)
-
-    $('#chat').append(c)
+    let $t = $('<p></p>', {
+      text: text,
+      style: 'display: none'
+    })
+    let $d = $('<div></div>', {
+      class: 'chat left',
+    })
+    $d.append($t)
+    $('#chat').append($d)
+    $t.fadeIn(500)
   }
 
   function A(text) {
-    let t = document.createTextNode(text)
-    
-    let q = document.createElement('p')
-    q.appendChild(t)
-
-    let c = document.createElement('div')
-    c.classList.add('chat')
-    c.classList.add('right')
-    c.appendChild(q)
-
-    $('#chat').append(c)
+    let $t = $('<p></p>', {
+      text: text,
+      style: 'display: none'
+    })
+    let $d = $('<div></div>', {
+      class: 'chat right',
+    })
+    $d.append($t)
+    $('#chat').append($d)
+    $t.fadeIn(500)
   }
 
   function query() {

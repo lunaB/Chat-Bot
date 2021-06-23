@@ -2,6 +2,9 @@
   font-size: 24px;
 }
 
+.chat_scroll {
+  transition: all 0.6s ease;
+}
 .chat {
   margin: 10px 0px;
   font-size: 14px;
