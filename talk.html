@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="common.css">
+  <title>GPT</title>
+</head>
+<body>
+  <div class="container">
+    <div class="hero is-fullheight">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="logo.png" alt="" height="28">
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              Project
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <button class="button is-primary">
+                <span class="icon">
+                  <i class="fas fa-cubes"></i>
+                </span>
+                <strong>Blog</strong>
+              </button>
+              <button class="button">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <strong>GitHub</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="pt-6">
+        <h2 class="title is-2" style="text-align: center;">다양한 챗봇들과 대화를 즐겨보세요 !!</h2>
+        <h2 class="subtitle is-5" style="text-align: center;">Able Bot</h2>
+        <div class="my-5" style="width: 50%; max-width: 500px; margin: 0 auto;">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                <span class="icon">
+                  <i class="far fa-meh" aria-hidden="true"></i>
+                </span>
+                개붕쿤
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div id="chat_scroll" class="card-content pb-1" style="height: 400px; overflow-y: scroll;">
+              <div id="chat" class="content">
+                
+              </div>
+            </div>
+            <div class="card-footer">
+              <input id="query" class="input" style="border: none; outline: none !important; box-shadow: none;" type="text" placeholder="안녕~ 하고 말을 걸어주세요~" autofocus autocomplete="off">
+              <button id="submit" style="border: none; background: none; padding: 0; cursor: pointer;">
+                <span class="icon" style="width: 40px;">
+                  <i class="far fa-paper-plane fa-lg" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <nav class="level" style="width: 50%; margin: 0 auto;">
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">일일 방문자</p>
+              <p class="title">15</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">누적 방문자</p>
+              <p class="title">122</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">쌓인 데이터수</p>
+              <p class="title">1.2K</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">좋아요</p>
+              <p class="title">48</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <footer class="footer has-background-white py-5">
+        <div class="is-fullheight has-text-grey">
+          <div class="is-pulled-left">
+            <p>Service ©2021</p>
+          </div>
+          <div class="is-pulled-right">
+            <a href="#" class="has-text-link-dark mx-2">FAQ</a>
+            <a href="#" class="has-text-link-dark mx-2">github</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="common.js"></script>
+</body>
+</html>

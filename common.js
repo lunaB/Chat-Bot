@@ -45,6 +45,24 @@ $(document).ready(async function() {
       A(text)
       $('#query').val("")
       $('#chat').parents().scrollTop($('#chat')[0].scrollHeight)
+
+      // res
+      $.ajax({
+        type : 'POST', 
+        url : 'http://51657f9ab179.ngrok.io/api/chat',
+        data : {
+          query: text
+        },
+        dataType : 'JSON',
+        success : function(result){
+          console.log(result)
+          Q(result.system)
+          $('#chat').parents().scrollTop($('#chat')[0].scrollHeight)
+        },
+        error : function(xtr,status,error){
+          console.log(xtr +":"+status+":"+error);
+        }
+      });
     }
   }
 
@@ -63,13 +81,14 @@ $(document).ready(async function() {
   async function sleep(ms) {
     await new Promise((resolve)=> { setTimeout(()=>resolve(), ms) })
   }
+  // await sleep(500)
+  // Q('개붕개붕..!')
+  // await sleep(500)
+  // Q('나는 개드립을 좋아하는 개붕쿤이야!')
+  // await sleep(500)
+  // A('개드립을 좋아하는구나!')
+  // await sleep(500)
+  // Q('적당한 개드립을 쳐줄래?')
   await sleep(500)
-  Q('개붕개붕..!')
-  await sleep(500)
-  Q('나는 개드립을 좋아하는 개붕쿤이야!')
-  await sleep(500)
-  A('개드립을 좋아하는구나!')
-  await sleep(500)
-  Q('적당한 개드립을 쳐줄래?')
-
+  Q('안녕 개붕아 무슨 일로 왔니?')
 })
