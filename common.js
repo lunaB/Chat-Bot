@@ -49,9 +49,10 @@ $(document).ready(async function() {
       // res
       $.ajax({
         type : 'POST', 
-        url : 'http://51657f9ab179.ngrok.io/api/chat',
+        url : 'http://c5b2e5901b20.ngrok.io/api/chat',
         data : {
-          query: text
+          query: text,
+          sent: '1'
         },
         dataType : 'JSON',
         success : function(result){
@@ -90,5 +91,5 @@ $(document).ready(async function() {
   // await sleep(500)
   // Q('적당한 개드립을 쳐줄래?')
   await sleep(500)
-  Q('안녕 개붕아 무슨 일로 왔니?')
+  Q('안녕하세요. 뭔가 힘든일이 있으시다면 제게 말해주실래요?')
 })
